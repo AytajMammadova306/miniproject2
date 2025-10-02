@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\bin\Debug\net8.0\Onion.Application.deps.json
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\bin\Debug\net8.0\Onion.Application.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\bin\Debug\net8.0\Onion.Application.pdb
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\bin\Debug\net8.0\Onion.Domein.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\bin\Debug\net8.0\Onion.Domein.pdb
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.AssemblyInfo.cs
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Ap.01DAD76B.Up2Date
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\refint\Onion.Application.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.pdb
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\ref\Onion.Application.dll
