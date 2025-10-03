@@ -8,9 +8,9 @@ namespace Onion.ConsoleApp
         static void Main(string[] args)
         {
             AppDbContext context = new();
-            AuthorService authorService = new(context);
-            BookSercive bookSercive = new(context);
-            ManagementApplication app = new(context, authorService, bookSercive);
+            BookService bookService = new(context);
+            AuthorService authorService = new(context,bookService);
+            ManagementApplication app = new(context, authorService, bookService);
             app.Run();
         }
     }

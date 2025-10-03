@@ -1,4 +1,5 @@
-﻿using Onion.Application.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Onion.Application.Interfaces;
 using Onion.Domein;
 using Persistance.Context;
 using System;
@@ -12,10 +13,12 @@ namespace Persistance.Implementations
     public class AuthorService : IAuthorService
     {
         private readonly AppDbContext context;
+        private readonly BookService bookService;
 
-        public AuthorService(AppDbContext context)
+        public AuthorService(AppDbContext context,BookService bookService)
         {
             this.context = context;
+            this.bookService = bookService;
         }
 
         public void Creat()
@@ -72,10 +75,10 @@ namespace Persistance.Implementations
 
         public void ShowAllAuthors()
         {
-            foreach(Author author in context.Authors.ToList())
-            {
-                Console.WriteLine($"{author.Id}\t{author.Name}\t{author.Books.Count}");
-            }
+            GetAuthors();
+            Console.WriteLine("\n\nPress any Key to go back to Menu");
+            Console.ReadKey();
+            Console.Clear();
         }
 
         public void ShowAuthorsBook()
@@ -83,17 +86,83 @@ namespace Persistance.Implementations
             int id;
             bool result;
             Author author = new();
+            Console.WriteLine("Please Enter Id of Author\n");
             do 
             {
-                Console.WriteLine("Please Enter Id of Author");
+                GetAuthors();
                 string answer=Console.ReadLine();
+                Console.Clear();
                 result = int.TryParse(answer,out id);
                 author = context.Authors.Find(id);
+                if(author is null)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Please enter correct Id\n");
+                    Console.ResetColor();
+                }
             } while (result==false||author is null);
             foreach (Book book in author.Books)
             {
-                Console.WriteLine($"{book.Name}\t{book.PageCount}");
+                Console.WriteLine($"{book.Name}\t   {book.PageCount}");
             }
+            Console.WriteLine("\n\nPress any Key to go back to Menu");
+            Console.ReadKey();
+            Console.Clear();
+        }
+        public void GetAuthors()
+        {
+            foreach (Author author in context.Authors.Include(a=>a.Books).ToList())
+            {
+                Console.WriteLine($"{author.Id}\t{author.Name}\t{author.Books.Count}");
+            }
+        }
+
+        public void AddBook()
+        {
+            int id;
+            bool result;
+            Author author = new();
+            do
+            {
+                Console.WriteLine("Please Enter Id of Author you want to add books to");
+                GetAuthors();
+                string answer = Console.ReadLine();
+                Console.Clear();
+                result = int.TryParse(answer, out id);
+                author = context.Authors.Find(id);
+                if (author is null)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Please enter correct Id\n");
+                    Console.ResetColor();
+                }
+            } while (result == false || author is null);
+            id = 0;
+            result = false;
+            Book book = new();
+            do
+            {
+                bookService.GetBooks();
+                book = bookService.ChooseBookById(id, result, book);
+                author.Books.Add(book);
+                string answer;
+                do {
+                    Console.WriteLine("Do you want to Add Another Book?(y/n)");
+                    answer=Console.ReadLine();
+                    if (answer.ToLower() == "y" || answer.ToLower() == "yes") break;
+                    else if (answer.ToLower() == "n" || answer.ToLower() == "no")
+                    {
+                        context.SaveChanges();
+                        return;
+                    }
+                    else
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Please enter Just yes/y or no/n");
+                        Console.ResetColor();
+                    }
+                } while (true);
+            } while (true);
         }
     }
 }

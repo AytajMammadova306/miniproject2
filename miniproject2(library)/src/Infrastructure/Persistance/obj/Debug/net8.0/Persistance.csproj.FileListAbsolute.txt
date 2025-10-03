@@ -17,3 +17,4 @@ C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Infrastructure\Pers
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Infrastructure\Persistance\obj\Debug\net8.0\Persistance.pdb
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Infrastructure\Persistance\obj\Debug\net8.0\Persistance.genruntimeconfig.cache
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Infrastructure\Persistance\obj\Debug\net8.0\ref\Persistance.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Infrastructure\Persistance\obj\Debug\net8.0\Persistance.sourcelink.json

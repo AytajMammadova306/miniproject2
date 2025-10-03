@@ -13,3 +13,4 @@ C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\D
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\refint\Onion.Application.dll
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.pdb
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\ref\Onion.Application.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\Onion.Application\obj\Debug\net8.0\Onion.Application.sourcelink.json

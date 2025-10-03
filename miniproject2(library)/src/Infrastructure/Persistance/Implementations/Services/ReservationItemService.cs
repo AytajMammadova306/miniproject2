@@ -10,25 +10,30 @@ namespace Persistance.Implementations
 {
     public class ReservationItemService : IReserveredItemService
     {
-        
+        private readonly AppDbContext context;
+
+        public ReservationItemService(AppDbContext context)
+        {
+            this.context = context;
+        }
         public void ChangeStatus()
         {
-            throw new NotImplementedException();
+
         }
 
         public void ReservationList()
         {
-            throw new NotImplementedException();
+
         }
 
         public void ReserveBook()
         {
-            throw new NotImplementedException();
+            
         }
 
         public void UsersReservation()
         {
-            throw new NotImplementedException();
+
         }
     }
 }

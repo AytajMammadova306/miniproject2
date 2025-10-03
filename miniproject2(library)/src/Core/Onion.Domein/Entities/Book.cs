@@ -10,8 +10,8 @@ namespace Onion.Domein
     {
         public string Name { get; set; }
         public int PageCount { get; set; }
-        public int AuthorId { get; set; }
-        public Author Author { get; set; }
+        public int? AuthorId { get; set; }
+        public Author? Author { get; set; } //muellifi bilinmeyen kitablar var. sonradan add oluna bilir muellif
         public List<ReservedItem> ReservedItems{ get; set; }
 }
 }

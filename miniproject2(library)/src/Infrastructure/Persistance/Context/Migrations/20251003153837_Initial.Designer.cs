@@ -12,7 +12,7 @@ using Persistance.Context;
 namespace Persistance.Context.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251002164655_Initial")]
+    [Migration("20251003153837_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -56,7 +56,7 @@ namespace Persistance.Context.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AuthorId")
+                    b.Property<int?>("AuthorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -108,9 +108,7 @@ namespace Persistance.Context.Migrations
                 {
                     b.HasOne("Onion.Domein.Author", "Author")
                         .WithMany("Books")
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AuthorId");
 
                     b.Navigation("Author");
                 });

@@ -9,3 +9,4 @@ C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Core\Onion.Domein\o
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Core\Onion.Domein\obj\Debug\net8.0\refint\Onion.Domein.dll
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Core\Onion.Domein\obj\Debug\net8.0\Onion.Domein.pdb
 C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Core\Onion.Domein\obj\Debug\net8.0\ref\Onion.Domein.dll
+C:\Users\User\Desktop\MiniProject2\miniproject2(library)\src\Core\Onion.Domein\obj\Debug\net8.0\Onion.Domein.sourcelink.json

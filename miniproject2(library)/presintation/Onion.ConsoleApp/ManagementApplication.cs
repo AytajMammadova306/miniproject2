@@ -12,10 +12,10 @@ namespace Onion.ConsoleApp
     internal class ManagementApplication
     {
         private AppDbContext _context;
-        public BookSercive BookSercive;
+        public BookService BookSercive;
         public AuthorService AuthorService;
 
-        public ManagementApplication(AppDbContext context, AuthorService authorService, BookSercive bookSercive)
+        public ManagementApplication(AppDbContext context, AuthorService authorService, BookService bookSercive)
         {
             _context = context;
             AuthorService = authorService;
@@ -28,7 +28,10 @@ namespace Onion.ConsoleApp
             bool result=false;
             do
             {
-                Console.WriteLine("1.Create Book\n2.Delete Book\n3.Get Book by Id\n4.Show All Books\n5.Create Author\n6.Show All Authors\n7.Show Author's Book\n8.Reservation Book\n9.Reservation List\n10.Change Reservation Status\n11.User's Reservation List");
+                Console.WriteLine("1.Create Book\n2.Delete Book\n3.Get Book by Id\n4.Show All Books\n5.Create Author\n6.Show All Authors\n7.Show Author's Book\n8.Add Book to Author\n9.Reservation Book\n10.Reservation List\n11.Change Reservation Status\n12.User's Reservation List\n\n");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("0.Exit");
+                Console.ResetColor();
                 string answer = Console.ReadLine();
                 Console.Clear();
                 result = int.TryParse(answer,out num);
@@ -36,13 +39,15 @@ namespace Onion.ConsoleApp
                 {
                     case 1:
                         BookSercive.Create();
-                        Console.WriteLine("Book Created\n");
                         break;
                     case 2:
+                        BookSercive.Delete();
                         break;
                     case 3:
+                        BookSercive.GetBookbyId();
                         break;
                     case 4:
+                        BookSercive.ShowAllBooks();
                         break;
                     case 5:
                         AuthorService.Creat();
@@ -51,14 +56,18 @@ namespace Onion.ConsoleApp
                         AuthorService.ShowAllAuthors();
                         break;
                     case 7:
+                        AuthorService.ShowAuthorsBook();
                         break;
                     case 8:
+                        AuthorService.AddBook();
                         break;
                     case 9:
                         break;
                     case 10:
                         break;
                     case 11:
+                        break;
+                    case 12:
                         break;
                     case 0:
                         if (result == true)
