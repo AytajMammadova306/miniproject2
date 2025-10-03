@@ -116,7 +116,7 @@ namespace Persistance.Implementations
                 Console.WriteLine($"{author.Id}\t{author.Name}\t{author.Books.Count}");
             }
         }
-
+        public void override Choose() 
         public void AddBook()
         {
             int id;
@@ -153,10 +153,12 @@ namespace Persistance.Implementations
                     else if (answer.ToLower() == "n" || answer.ToLower() == "no")
                     {
                         context.SaveChanges();
+                        Console.Clear();
                         return;
                     }
                     else
                     {
+                        Console.Clear();
                         Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Please enter Just yes/y or no/n");
                         Console.ResetColor();

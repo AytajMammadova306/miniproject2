@@ -14,12 +14,14 @@ namespace Onion.ConsoleApp
         private AppDbContext _context;
         public BookService BookSercive;
         public AuthorService AuthorService;
+        public ReservationItemService ReservationItemService;
 
-        public ManagementApplication(AppDbContext context, AuthorService authorService, BookService bookSercive)
+        public ManagementApplication(AppDbContext context, AuthorService authorService, BookService bookSercive,ReservationItemService reservationItemService)
         {
             _context = context;
             AuthorService = authorService;
             BookSercive = bookSercive;
+            ReservationItemService = reservationItemService;
         }
 
         public void Run()
@@ -62,6 +64,7 @@ namespace Onion.ConsoleApp
                         AuthorService.AddBook();
                         break;
                     case 9:
+                        ReservationItemService.ReserveBook();
                         break;
                     case 10:
                         break;

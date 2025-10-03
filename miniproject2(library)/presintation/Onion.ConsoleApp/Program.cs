@@ -10,7 +10,8 @@ namespace Onion.ConsoleApp
             AppDbContext context = new();
             BookService bookService = new(context);
             AuthorService authorService = new(context,bookService);
-            ManagementApplication app = new(context, authorService, bookService);
+            ReservationItemService reservationItemService=new(context,bookService);
+            ManagementApplication app = new(context, authorService, bookService, reservationItemService);
             app.Run();
         }
     }

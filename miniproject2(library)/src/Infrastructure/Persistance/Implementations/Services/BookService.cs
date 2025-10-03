@@ -134,7 +134,7 @@ namespace Persistance.Implementations
             Console.ReadKey();
             Console.Clear();
         }
-        public Book ChooseBookById(int id,bool result,Book book)
+        public virtual Book ChooseBookById(int id,bool result,Book book)
         {
             do
             {
@@ -151,6 +151,7 @@ namespace Persistance.Implementations
                 }
             } while (result == false || book is null);
             return book;
+
         }
 
         public void ShowAllBooks()
