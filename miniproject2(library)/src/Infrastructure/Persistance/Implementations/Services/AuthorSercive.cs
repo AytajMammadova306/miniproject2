@@ -116,7 +116,6 @@ namespace Persistance.Implementations
                 Console.WriteLine($"{author.Id}\t{author.Name}\t{author.Books.Count}");
             }
         }
-        public void override Choose() 
         public void AddBook()
         {
             int id;
@@ -142,8 +141,11 @@ namespace Persistance.Implementations
             Book book = new();
             do
             {
-                bookService.GetBooks();
-                book = bookService.ChooseBookById(id, result, book);
+                do
+                {
+                    bookService.GetBooks();
+                    book = bookService.ChooseBookById(id, out result, book);
+                } while (result == false || book is null);
                 author.Books.Add(book);
                 string answer;
                 do {

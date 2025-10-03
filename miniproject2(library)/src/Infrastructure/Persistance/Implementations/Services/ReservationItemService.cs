@@ -26,23 +26,50 @@ namespace Persistance.Implementations
             int id = 0;
             bool result = false;
             Book book = new();
-            BookService.GetBooks();
-            book =BookService.ChooseBookById(id,result,book);
-            Console.WriteLine("Please enter Start Date.(MM/DD/YYYY)");
-            DateTime startTime;
+            do {
+                BookService.GetBooks();
+                book = BookService.ChooseBookById(id, out result, book);
+            } while (result == false || book is null);
+            Console.WriteLine("Please enter Start Date. (MM/DD/YYYY)/(MM.DD.YYYY)/(MM-DD-YYYY)");
+            DateTime startDate;
             do
             {
                 string answer = Console.ReadLine();
-                result = DateTime.TryParse(answer, out startTime);
-                if (result == false || startTime <= DateTime.Now)
+                result = DateTime.TryParse(answer, out startDate);
+                if (result == false || startDate <= DateTime.Now)
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please enter in \"MM/DD/YYYY\" format. Also Make sure this date time exists and is not in the past");
+                    Console.WriteLine("Please enter in \"MM/DD/YYYY\" / \"MM.DD.YYYY\" / \"MM-DD-YYYY\" format. Also Make sure this date time exists and is not in the past");
                     Console.ResetColor();
                 }
-            } while (result == false ||startTime<=DateTime.Now);
-            Console.WriteLine(startTime);
+            } while (result == false ||startDate <=DateTime.Now);
+            Console.WriteLine(startDate);
+
+            Console.WriteLine("Please enter End Date. (MM/DD/YYYY)/(MM.DD.YYYY)/(MM-DD-YYYY)");
+            DateTime endDate;
+            do
+            {
+                string answer = Console.ReadLine();
+                result = DateTime.TryParse(answer, out endDate);
+                if (result == false || endDate <= DateTime.Now)
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Please enter in \"MM/DD/YYYY\" / \"MM.DD.YYYY\" / \"MM-DD-YYYY\" format. Also Make sure this date time exists and is not in the past");
+                    Console.ResetColor();
+                }
+                else if(endDate <= startDate)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("endTime can not be Ealier than StartDate");
+                    Console.ResetColor();
+                }
+            } while (result == false || endDate <= DateTime.Now||endDate<=startDate);
+            Console.WriteLine(endDate);
+
+
+
         }
         public void ChangeStatus()
         {

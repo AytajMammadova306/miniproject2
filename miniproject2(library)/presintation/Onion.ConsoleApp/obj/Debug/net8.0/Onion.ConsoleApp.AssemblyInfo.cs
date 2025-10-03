@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Onion.ConsoleApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c64268ef7a53c150976b8c337ca9c1d62dd66bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa23931afa9d81a0779b11c0ad6d87c6f3427b99")]
 [assembly: System.Reflection.AssemblyProductAttribute("Onion.ConsoleApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Onion.ConsoleApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

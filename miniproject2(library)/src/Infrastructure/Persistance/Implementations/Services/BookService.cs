@@ -128,28 +128,30 @@ namespace Persistance.Implementations
             int id=0;
             bool result=false;
             Book book = new();
-            book=ChooseBookById(id, result, book);
-            Console.WriteLine($"{book.Name}\t{book.PageCount}\t{book.Author.Name}");
+            do {
+                book = ChooseBookById(id, out result, book);
+            }while(result == false || book is null);
+            if (book.Author is null)
+                Console.WriteLine($"{book.Id}\t{book.Name}  \t{book.PageCount}");
+            else
+                Console.WriteLine($"{book.Id}\t{book.Name}  \t{book.PageCount}\t{book.Author.Name}");
             Console.WriteLine("\n\nPress any Key to go back to Menu");
             Console.ReadKey();
             Console.Clear();
         }
-        public virtual Book ChooseBookById(int id,bool result,Book book)
+        public Book ChooseBookById(int id,out bool result,Book book)
         {
-            do
+            Console.WriteLine("Please Enter Id of Books\n");
+            string answer = Console.ReadLine();
+            Console.Clear();
+            result = int.TryParse(answer, out id);
+            book = context.Books.Include(b=>b.Author).FirstOrDefault(b=>b.Id==id);
+            if (book is null)
             {
-                Console.WriteLine("Please Enter Id of Books\n");
-                string answer = Console.ReadLine();
-                Console.Clear();
-                result = int.TryParse(answer, out id);
-                book = context.Books.Include(b=>b.Author).FirstOrDefault(b=>b.Id==id);
-                if (book is null)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Please enter correct Id\n");
-                    Console.ResetColor();
-                }
-            } while (result == false || book is null);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Please enter correct Id\n");
+                Console.ResetColor();
+            }
             return book;
 
         }
