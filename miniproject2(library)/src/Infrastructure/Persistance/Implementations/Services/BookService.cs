@@ -73,11 +73,13 @@ namespace Persistance.Implementations
                         AuthorId = null
                     });
                     context.SaveChanges();
+                    Console.Clear();
                     Console.WriteLine("Book Created\n");
                     return;
                 }
                 else
                 {
+                    Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Please enter Just yes/y or no/n");
                     Console.ResetColor();

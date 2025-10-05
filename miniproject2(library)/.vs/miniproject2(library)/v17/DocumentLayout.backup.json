@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\infrastructure\\persistance\\implementations\\services\\reservationitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|solutionrelative:src\\infrastructure\\persistance\\implementations\\services\\reservationitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\infrastructure\\persistance\\implementations\\services\\authorsercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|solutionrelative:src\\infrastructure\\persistance\\implementations\\services\\authorsercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\infrastructure\\persistance\\implementations\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|solutionrelative:src\\infrastructure\\persistance\\implementations\\services\\bookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\infrastructure\\persistance\\implementations\\services\\authorsercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|solutionrelative:src\\infrastructure\\persistance\\implementations\\services\\authorsercive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\presintation\\onion.consoleapp\\managementapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|solutionrelative:presintation\\onion.consoleapp\\managementapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\presintation\\onion.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|solutionrelative:presintation\\onion.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13FD567B-DFA0-42C4-9708-5E9224338F7D}|Onion.Application\\Onion.Application.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\onion.application\\interfaces\\services\\ireservereditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13FD567B-DFA0-42C4-9708-5E9224338F7D}|Onion.Application\\Onion.Application.csproj|solutionrelative:onion.application\\interfaces\\services\\ireservereditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\core\\onion.domein\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|solutionrelative:src\\core\\onion.domein\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\core\\onion.domein\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|solutionrelative:src\\core\\onion.domein\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\infrastructure\\persistance\\implementations\\services\\reservationitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F23525-0F85-46CA-A6BA-F990509F38AC}|src\\Infrastructure\\Persistance\\Persistance.csproj|solutionrelative:src\\infrastructure\\persistance\\implementations\\services\\reservationitemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\core\\onion.domein\\entities\\reserveditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|solutionrelative:src\\core\\onion.domein\\entities\\reserveditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13FD567B-DFA0-42C4-9708-5E9224338F7D}|Onion.Application\\Onion.Application.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\onion.application\\interfaces\\services\\ireservereditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13FD567B-DFA0-42C4-9708-5E9224338F7D}|Onion.Application\\Onion.Application.csproj|solutionrelative:onion.application\\interfaces\\services\\ireservereditemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\presintation\\onion.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0119AC8-30A8-4519-9AE4-ADAA4E4544F6}|presintation\\Onion.ConsoleApp\\Onion.ConsoleApp.csproj|solutionrelative:presintation\\onion.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\src\\core\\onion.domein\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{291FC5CE-F161-4DE1-AA0D-510CA5263FDB}|src\\Core\\Onion.Domein\\Onion.Domein.csproj|solutionrelative:src\\core\\onion.domein\\entities\\author.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13FD567B-DFA0-42C4-9708-5E9224338F7D}|Onion.Application\\Onion.Application.csproj|c:\\users\\user\\desktop\\miniproject2\\miniproject2(library)\\onion.application\\interfaces\\services\\ibookservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,30 +66,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ReservationItemService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs*",
-              "RelativeToolTip": "src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAABcAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs",
+              "RelativeToolTip": "src\\Infrastructure\\Persistance\\Implementations\\Services\\ReservationItemService.cs",
+              "ViewState": "AgIAANEAAAAAAAAAAAAUwOQAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T15:38:33.009Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AuthorSercive.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs",
-              "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs",
-              "RelativeToolTip": "src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAowI4AAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs*",
+              "RelativeToolTip": "src\\Infrastructure\\Persistance\\Implementations\\Services\\AuthorSercive.cs*",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwHEAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-01T15:38:08.422Z",
               "EditorCaption": ""
@@ -102,14 +102,14 @@
               "RelativeDocumentMoniker": "src\\Infrastructure\\Persistance\\Implementations\\Services\\BookService.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Infrastructure\\Persistance\\Implementations\\Services\\BookService.cs",
               "RelativeToolTip": "src\\Infrastructure\\Persistance\\Implementations\\Services\\BookService.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAIwIgAAABlAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswFEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T17:42:39.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IReserveredItemService.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\Onion.Application\\Interfaces\\Services\\IReserveredItemService.cs",
               "RelativeDocumentMoniker": "Onion.Application\\Interfaces\\Services\\IReserveredItemService.cs",
@@ -117,7 +117,8 @@
               "RelativeToolTip": "Onion.Application\\Interfaces\\Services\\IReserveredItemService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T17:38:53.079Z"
+              "WhenOpened": "2025-09-30T17:38:53.079Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -145,19 +146,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ManagementApplication.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\presintation\\Onion.ConsoleApp\\ManagementApplication.cs",
               "RelativeDocumentMoniker": "presintation\\Onion.ConsoleApp\\ManagementApplication.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\presintation\\Onion.ConsoleApp\\ManagementApplication.cs",
               "RelativeToolTip": "presintation\\Onion.ConsoleApp\\ManagementApplication.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAcwEIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEUAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T16:03:41.901Z"
+              "WhenOpened": "2025-09-30T16:03:41.901Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "ReservedItem.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Core\\Onion.Domein\\Entities\\ReservedItem.cs",
               "RelativeDocumentMoniker": "src\\Core\\Onion.Domein\\Entities\\ReservedItem.cs",
@@ -165,11 +167,12 @@
               "RelativeToolTip": "src\\Core\\Onion.Domein\\Entities\\ReservedItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T15:54:02.632Z"
+              "WhenOpened": "2025-09-30T15:54:02.632Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Author.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Core\\Onion.Domein\\Entities\\Author.cs",
               "RelativeDocumentMoniker": "src\\Core\\Onion.Domein\\Entities\\Author.cs",
@@ -193,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\src\\Core\\Onion.Domein\\Entities\\Book.cs",
               "RelativeDocumentMoniker": "src\\Core\\Onion.Domein\\Entities\\Book.cs",
@@ -201,7 +204,8 @@
               "RelativeToolTip": "src\\Core\\Onion.Domein\\Entities\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T15:20:46.081Z"
+              "WhenOpened": "2025-09-30T15:20:46.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -229,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\MiniProject2\\miniproject2(library)\\presintation\\Onion.ConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "presintation\\Onion.ConsoleApp\\Program.cs",

@@ -67,10 +67,13 @@ namespace Onion.ConsoleApp
                         ReservationItemService.ReserveBook();
                         break;
                     case 10:
+                        ReservationItemService.ReservationList();
                         break;
                     case 11:
+                        ReservationItemService.ChangeStatus();
                         break;
                     case 12:
+                        ReservationItemService.UsersReservation();
                         break;
                     case 0:
                         if (result == true)

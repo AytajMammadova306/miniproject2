@@ -56,9 +56,16 @@ namespace Persistance.Implementations
                 {
                     Console.WriteLine((int)id+" "+id);
                 }
-                Console.WriteLine("Please Enter number of Gender or \"X\" To Exit");
+                Console.WriteLine("Please Enter number of Gender or \"X\" To Cancel Creation and Exit");
                 gender= Console.ReadLine();
-                if (gender.ToLower() == "x") return;
+                if (gender.ToLower() == "x")
+                {
+                    Console.Clear();
+                    Console.ForegroundColor= ConsoleColor.Red;
+                    Console.WriteLine("Creation Canceled\n");
+                    Console.ResetColor();
+                    return;
+                }
                 result=int.TryParse(gender, out Genderid);
                 exists = Enum.IsDefined(typeof(Gender),Genderid);
             } while (string.IsNullOrWhiteSpace(gender)||exists==false||result==false);
@@ -101,9 +108,19 @@ namespace Persistance.Implementations
                     Console.ResetColor();
                 }
             } while (result==false||author is null);
+            if (author.Books.Count == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Sorry, At this moment our library doesn not have any books of {author.Name}\n");
+                Console.ResetColor();
+                return;
+            }
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            Console.WriteLine("Id\tName\tPage Count\n");
+            Console.ResetColor();
             foreach (Book book in author.Books)
             {
-                Console.WriteLine($"{book.Name}\t   {book.PageCount}");
+                Console.WriteLine($"{book.Id}\t{book.Name}\t\t{book.PageCount}");
             }
             Console.WriteLine("\n\nPress any Key to go back to Menu");
             Console.ReadKey();
@@ -111,9 +128,12 @@ namespace Persistance.Implementations
         }
         public void GetAuthors()
         {
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            Console.WriteLine("Id\tName\t\tBook Count\n");
+            Console.ResetColor();
             foreach (Author author in context.Authors.Include(a=>a.Books).ToList())
             {
-                Console.WriteLine($"{author.Id}\t{author.Name}\t{author.Books.Count}");
+                Console.WriteLine($"{author.Id}\t{author.Name}\t\t{author.Books.Count}");
             }
         }
         public void AddBook()
