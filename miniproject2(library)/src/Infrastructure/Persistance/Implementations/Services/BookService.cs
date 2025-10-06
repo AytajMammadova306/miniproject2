@@ -160,6 +160,9 @@ namespace Persistance.Implementations
 
         public void ShowAllBooks()
         {
+            Console.ForegroundColor=ConsoleColor.Yellow;
+            Console.WriteLine("Id\tName\tPage Count\tAuthor\n");
+            Console.ResetColor();
             GetBooks();
             Console.WriteLine("\n\nPress any Key to go back to Menu");
             Console.ReadKey();
@@ -171,9 +174,9 @@ namespace Persistance.Implementations
             foreach (Book book in context.Books.Include(b=>b.Author).ToList())
             {
                 if(book.Author is null)
-                    Console.WriteLine($"{book.Id}\t{book.Name}  \t{book.PageCount}");
+                    Console.WriteLine($"{book.Id}\t{book.Name}\t{book.PageCount}");
                 else 
-                    Console.WriteLine($"{book.Id}\t{book.Name}  \t{book.PageCount}\t{book.Author.Name}");
+                    Console.WriteLine($"{book.Id}\t{book.Name}\t{book.PageCount}\t\t{book.Author.Name}");
             }
         }
     }

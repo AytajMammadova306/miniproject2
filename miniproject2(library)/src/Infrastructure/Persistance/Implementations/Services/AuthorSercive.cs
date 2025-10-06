@@ -21,6 +21,24 @@ namespace Persistance.Implementations
             this.bookService = bookService;
         }
 
+
+        public void Delete()
+        {
+            Author author = new();
+            author = GetAuthorById();
+            context.Authors.Remove(author);
+            if (author.Books.Count != 0)
+            {
+                foreach(Book book in author.Books)
+                {
+                    context.Books.Remove(book);
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{author.Name} was succesfully deleted");
+            Console.ResetColor();
+            context.SaveChanges();
+        }
         public void Creat()
         {
             string name;
@@ -88,26 +106,34 @@ namespace Persistance.Implementations
             Console.Clear();
         }
 
-        public void ShowAuthorsBook()
+
+        public Author GetAuthorById()
         {
             int id;
             bool result;
             Author author = new();
             Console.WriteLine("Please Enter Id of Author\n");
-            do 
+            do
             {
                 GetAuthors();
-                string answer=Console.ReadLine();
+                string answer = Console.ReadLine();
                 Console.Clear();
-                result = int.TryParse(answer,out id);
+                result = int.TryParse(answer, out id);
                 author = context.Authors.Find(id);
-                if(author is null)
+                if (author is null)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Please enter correct Id\n");
                     Console.ResetColor();
                 }
-            } while (result==false||author is null);
+            } while (result == false || author is null);
+            return author;
+        }
+
+        public void ShowAuthorsBook()
+        {
+            Author author = new();
+            author = GetAuthorById();
             if (author.Books.Count == 0)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -163,10 +189,30 @@ namespace Persistance.Implementations
             {
                 do
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Id\tName\tPage Count\tAuthor\n");
+                    Console.ResetColor();
                     bookService.GetBooks();
+                    Console.WriteLine();
                     book = bookService.ChooseBookById(id, out result, book);
                 } while (result == false || book is null);
-                author.Books.Add(book);
+                if (author.Books.Any(b => b.Id == book.Id))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"{author.Name} alreaddy has this book");
+                    Console.ResetColor();
+                }
+                else if(context.Authors.Select(a => a.Books).Any(l => l.Any(b => b.Id == book.Id)))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"this book alreaddy belongs to {context.Authors.Include(a => a.Books).FirstOrDefault(a => a.Books.Where( b=>b.Id== book.Id)==book)}");
+                    Console.ResetColor();
+                }//beynim yandi
+                else
+                {
+                    author.Books.Add(book);
+                    context.SaveChanges();
+                }
                 string answer;
                 do {
                     Console.WriteLine("Do you want to Add Another Book?(y/n)");

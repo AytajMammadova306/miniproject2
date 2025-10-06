@@ -86,7 +86,7 @@ namespace Persistance.Context.Migrations
 
                     b.Property<string>("FinCode")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("NCHAR(7)");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");

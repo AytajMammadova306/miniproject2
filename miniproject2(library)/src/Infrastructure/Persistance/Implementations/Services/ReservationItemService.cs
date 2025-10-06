@@ -126,7 +126,7 @@ namespace Persistance.Implementations
                     Console.WriteLine("Number of characters should be exactly 7");
                     Console.ResetColor();
                 }
-            } while (fin.Length!=7);
+            } while (fin.Trim().Length!=7|| fin.Length != 7);
             return fin;
         }
         public void ChangeStatus()
@@ -170,22 +170,37 @@ namespace Persistance.Implementations
                 }
                 Console.WriteLine("Please Enter number of Status or \"X\" To Exit");
                 status = Console.ReadLine();
-                if (status.ToLower() == "x") return;
+                if (status.ToLower() == "x")
+                {
+                    Console.Clear();
+                    return;
+                }
                 result = int.TryParse(status, out StatusNum);
                 exists = Enum.IsDefined(typeof(Status), StatusNum);
                 if ((Status)StatusNum == item.Status)
                 {
-                    Console.WriteLine($"Status of reserve with {id} id is already {item.Status}");
+                    Console.Clear();
+                    Console.ForegroundColor= ConsoleColor.Yellow;
+                    Console.WriteLine($"Status of reserve with id {id} is already {item.Status}\n");
+                    Console.ResetColor();
                     return;
                 }
             } while (string.IsNullOrWhiteSpace(status) || exists == false || result == false);
             item.Status = (Status)StatusNum;
+            Console.Clear();
             context.SaveChanges();
         }
 
         public void ReservationList()
         {
-            context.ReservedItems.OrderBy(r => r.Status);
+            Console.WriteLine("Id\tBook Name\tBook Author\tStart Date\tEnd Date\tStatus");
+            foreach (ReservedItem item in  context.ReservedItems.Include(r=>r.Book).Include(r => r.Book.Author).OrderBy(r => r.Status))
+            {
+                Console.WriteLine($"{item.Id}\t{item.Book.Name}\t\t{item.Book.Author.Name}\t\t{item.StartDate.ToString("dd.MM.yyyy")}\t{item.EndDate.ToString("dd.MM.yyyy")}\t{item.Status}");
+            }
+            Console.WriteLine("\n\nPress any Key to go back to Menu");
+            Console.ReadKey();
+            Console.Clear();
 
         }
 
@@ -201,6 +216,7 @@ namespace Persistance.Implementations
                 items = context.ReservedItems.Include(r=>r.Book).Include(r => r.Book.Author).Where(r => r.FinCode == fin).ToList();
                 if (items.Count==0)
                 {
+                    Console.Clear();
                     Console.ForegroundColor= ConsoleColor.Yellow;
                     Console.WriteLine("Reservations with this FinCode Not Found. Would you Like to enter Fin again? (yes/y or no/n)");
                     Console.ResetColor();

@@ -18,5 +18,14 @@ namespace Persistance.Context
         public DbSet<Book>Books { get; set; }
         public DbSet<Author>Authors { get; set; }
         public DbSet<ReservedItem> ReservedItems { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ReservedItem>()
+                .Property(r => r.FinCode)
+                .HasColumnType("NCHAR(7)");
+        }
     }
 }

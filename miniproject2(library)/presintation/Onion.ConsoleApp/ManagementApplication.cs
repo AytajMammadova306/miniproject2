@@ -30,7 +30,7 @@ namespace Onion.ConsoleApp
             bool result=false;
             do
             {
-                Console.WriteLine("1.Create Book\n2.Delete Book\n3.Get Book by Id\n4.Show All Books\n5.Create Author\n6.Show All Authors\n7.Show Author's Book\n8.Add Book to Author\n9.Reservation Book\n10.Reservation List\n11.Change Reservation Status\n12.User's Reservation List\n\n");
+                Console.WriteLine("1.Create Book\n2.Delete Book\n3.Get Book by Id\n4.Show All Books\n5.Create Author\n6.Delete Author\n7.Show All Authors\n8.Show Author's Book\n9.Add Book to Author\n10.Reservation Book\n11.Reservation List\n12.Change Reservation Status\n13.User's Reservation List\n\n");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("0.Exit");
                 Console.ResetColor();
@@ -55,24 +55,27 @@ namespace Onion.ConsoleApp
                         AuthorService.Creat();
                         break;
                     case 6:
-                        AuthorService.ShowAllAuthors();
+                        AuthorService.Delete();
                         break;
                     case 7:
-                        AuthorService.ShowAuthorsBook();
+                        AuthorService.ShowAllAuthors();
                         break;
                     case 8:
-                        AuthorService.AddBook();
+                        AuthorService.ShowAuthorsBook();
                         break;
                     case 9:
-                        ReservationItemService.ReserveBook();
+                        AuthorService.AddBook(); ;
                         break;
                     case 10:
-                        ReservationItemService.ReservationList();
+                        ReservationItemService.ReserveBook();
                         break;
                     case 11:
-                        ReservationItemService.ChangeStatus();
+                        ReservationItemService.ReservationList();
                         break;
                     case 12:
+                        ReservationItemService.ChangeStatus();
+                        break;
+                    case 13:
                         ReservationItemService.UsersReservation();
                         break;
                     case 0:
